@@ -1458,21 +1458,52 @@ html[data-theme="dark"] .theme-icon--moon {
 @media (min-width: 52.01rem) and (max-height: 48rem) {
   .hero {
     min-height: auto;
-    padding-top: calc(var(--header-height) + 3rem);
-    padding-bottom: 4rem;
+    align-items: start;
+    padding-top: calc(var(--header-height) + 1rem);
+    padding-bottom: 2.5rem;
+  }
+
+  .hero__grid {
+    grid-template-columns: minmax(0, 1.3fr) minmax(17rem, 0.7fr);
+    gap: 2.25rem;
+    align-items: center;
+  }
+
+  .eyebrow {
+    margin-bottom: 0.9rem;
+    font-size: 0.68rem;
+  }
+
+  h1 {
+    max-width: 16ch;
+    margin-bottom: 1.1rem;
+    font-size: clamp(2.65rem, 4.6vw, 3.45rem);
+    line-height: 1.02;
   }
 
   .hero__lead {
-    margin-bottom: 1.4rem;
+    max-width: 35rem;
+    margin-bottom: 1.1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .button {
+    min-height: 2.85rem;
+    padding-block: 0.65rem;
   }
 
   .hero__facts {
-    padding-top: 1.4rem;
-    margin-top: 1.4rem;
+    display: none;
   }
 
   .system-map {
-    min-height: 19rem;
+    min-height: 17rem;
+  }
+
+  .system-card__top,
+  .system-card__footer {
+    padding: 0.7rem 0.9rem;
   }
 
   .scroll-cue {
