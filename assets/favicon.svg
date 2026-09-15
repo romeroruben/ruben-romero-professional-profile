@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Monograma RR">
+  <rect width="64" height="64" rx="16" fill="#102a43"/>
+  <path d="M15 47V17h14c7 0 12 4 12 10 0 4-2 7-6 9l10 11h-9l-9-10h-5v10zm7-16h7c3 0 5-1 5-4s-2-4-5-4h-7z" fill="#5eead4"/>
+  <path d="M40 17h9v6h-9z" fill="#f8fafc" opacity=".9"/>
+</svg>
