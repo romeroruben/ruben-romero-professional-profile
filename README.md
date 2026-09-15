@@ -1,6 +1,6 @@
 # Rubén Romero — Professional Profile
 
-Portfolio profesional de **Rubén Romero**, Staff Engineer y Software Architect especializado en arquitectura cloud, sistemas distribuidos, backend, Developer Experience y AI Enablement.
+Portfolio profesional de **Rubén Romero**, Staff Engineer en Naranja X y Arquitecto de Software asignado a Nave, especializado en arquitectura cloud, sistemas distribuidos, backend, Developer Platform, Developer Experience y AI Enablement. Incluye su trayectoria técnica y su experiencia como docente a cargo de Backend de Aplicaciones en UTN-FRC (2023–2025).
 
 [Ver sitio publicado](https://romeroruben.github.io/ruben-romero-professional-profile/)
 
@@ -21,7 +21,8 @@ Portfolio profesional de **Rubén Romero**, Staff Engineer y Software Architect 
 ├── styles.css
 ├── script.js
 ├── assets/
-│   └── favicon.svg
+│   ├── favicon.svg
+│   └── ruben-romero.jpeg
 ├── .nojekyll
 └── README.md
 ```
