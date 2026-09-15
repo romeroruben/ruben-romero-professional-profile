@@ -133,9 +133,9 @@ h3 {
 }
 
 h1 {
-  max-width: 15ch;
-  margin-bottom: 1.75rem;
-  font-size: clamp(3rem, 5.8vw, 5.5rem);
+  max-width: 16ch;
+  margin-bottom: 1.5rem;
+  font-size: clamp(2.75rem, 4.8vw, 4.8rem);
 }
 
 h1 em {
@@ -166,7 +166,7 @@ p:last-child {
 
 .section {
   position: relative;
-  padding-block: clamp(6rem, 11vw, 10rem);
+  padding-block: clamp(4rem, 8svh, 7rem);
 }
 
 .section--tinted {
@@ -394,11 +394,11 @@ html[data-theme="dark"] .theme-icon--moon {
 
 .hero {
   display: grid;
-  min-height: max(47rem, 100svh);
+  min-height: auto;
   overflow: hidden;
-  align-items: center;
-  padding-top: calc(var(--header-height) + 5rem);
-  padding-bottom: 7rem;
+  align-items: start;
+  padding-top: calc(var(--header-height) + clamp(2rem, 5svh, 3.5rem));
+  padding-bottom: clamp(3.5rem, 7svh, 5rem);
 }
 
 .hero::before {
@@ -438,8 +438,8 @@ html[data-theme="dark"] .theme-icon--moon {
 .hero__grid {
   position: relative;
   display: grid;
-  grid-template-columns: minmax(0, 1.12fr) minmax(22rem, 0.88fr);
-  gap: clamp(3rem, 6vw, 7rem);
+  grid-template-columns: minmax(0, 1.3fr) minmax(18rem, 0.7fr);
+  gap: clamp(2.25rem, 4vw, 4.5rem);
   align-items: center;
 }
 
@@ -469,7 +469,7 @@ html[data-theme="dark"] .theme-icon--moon {
 
 .hero__lead {
   max-width: 39rem;
-  margin-bottom: 2.25rem;
+  margin-bottom: 1.5rem;
   color: var(--ink-soft);
   font-size: clamp(1.1rem, 1.7vw, 1.3rem);
   line-height: 1.65;
@@ -538,8 +538,8 @@ html[data-theme="dark"] .theme-icon--moon {
   display: grid;
   max-width: 44rem;
   grid-template-columns: repeat(3, 1fr);
-  padding-top: 2.3rem;
-  margin: 2.3rem 0 0;
+  padding-top: 1.75rem;
+  margin: 1.75rem 0 0;
   border-top: 1px solid var(--line);
 }
 
@@ -645,7 +645,7 @@ html[data-theme="dark"] .theme-icon--moon {
 .system-map {
   position: relative;
   aspect-ratio: 1 / 0.88;
-  min-height: 24rem;
+  min-height: 20rem;
   overflow: hidden;
 }
 
@@ -854,7 +854,7 @@ html[data-theme="dark"] .theme-icon--moon {
 /* Profile and principles -------------------------------------------------- */
 
 .section-heading {
-  margin-bottom: clamp(3rem, 6vw, 5rem);
+  margin-bottom: clamp(2.5rem, 5svh, 4rem);
 }
 
 .section-index {
@@ -869,7 +869,7 @@ html[data-theme="dark"] .theme-icon--moon {
 }
 
 .profile-copy {
-  padding-top: 2.5rem;
+  padding-top: clamp(0rem, 2svh, 1.5rem);
   color: var(--ink-soft);
   font-size: 1.08rem;
 }
@@ -894,7 +894,7 @@ html[data-theme="dark"] .theme-icon--moon {
 .principles-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin-top: clamp(4rem, 9vw, 8rem);
+  margin-top: clamp(3rem, 7svh, 5.5rem);
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
 }
@@ -910,7 +910,7 @@ html[data-theme="dark"] .theme-icon--moon {
 
 .principle__number {
   display: inline-block;
-  margin-bottom: 3.5rem;
+  margin-bottom: clamp(1.5rem, 4svh, 2.75rem);
   color: var(--accent);
   font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
   font-size: 0.7rem;
@@ -944,7 +944,7 @@ html[data-theme="dark"] .theme-icon--moon {
 
 .expertise-card {
   grid-column: span 3;
-  min-height: 23rem;
+  min-height: auto;
   padding: clamp(1.5rem, 3vw, 2.25rem);
   border: 1px solid var(--line);
   border-radius: var(--radius-md);
@@ -986,7 +986,7 @@ html[data-theme="dark"] .theme-icon--moon {
   display: grid;
   width: 3rem;
   height: 3rem;
-  margin-bottom: 3.5rem;
+  margin-bottom: clamp(2rem, 5svh, 3rem);
   place-items: center;
   border-radius: 0.8rem;
   background: var(--accent-soft);
@@ -1050,7 +1050,7 @@ html[data-theme="dark"] .theme-icon--moon {
   grid-template-columns: 4rem minmax(0, 1fr) minmax(11rem, 0.38fr);
   gap: clamp(1.25rem, 4vw, 4rem);
   align-items: center;
-  padding-block: 2.3rem;
+  padding-block: clamp(1.5rem, 3.5svh, 2.3rem);
   border-bottom: 1px solid var(--line);
   transition: padding 250ms var(--ease), background-color 250ms ease;
 }
@@ -1137,7 +1137,7 @@ html[data-theme="dark"] .theme-icon--moon {
 
 .timeline-item {
   position: relative;
-  padding: 0 0 3.5rem 3.25rem;
+  padding: 0 0 clamp(2.25rem, 5svh, 3.5rem) 3.25rem;
 }
 
 .timeline-item:last-child {
@@ -1199,14 +1199,14 @@ html[data-theme="dark"] .theme-icon--moon {
 }
 
 .stack-group {
-  min-height: 20rem;
+  min-height: auto;
   padding: clamp(1.5rem, 4vw, 3rem);
   border-right: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
 }
 
 .stack-group__index {
-  margin-bottom: 4rem;
+  margin-bottom: clamp(2rem, 5svh, 3.25rem);
   color: var(--accent);
   font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
   font-size: 0.68rem;
@@ -1234,7 +1234,7 @@ html[data-theme="dark"] .theme-icon--moon {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
-  margin-top: clamp(4rem, 8vw, 7rem);
+  margin-top: clamp(3rem, 7svh, 5rem);
 }
 
 .education-card {
@@ -1430,12 +1430,12 @@ html[data-theme="dark"] .theme-icon--moon {
 
 @media (max-width: 64rem) {
   .hero__grid {
-    grid-template-columns: minmax(0, 1fr) minmax(20rem, 0.72fr);
-    gap: 3rem;
+    grid-template-columns: minmax(0, 1.2fr) minmax(17.5rem, 0.7fr);
+    gap: 2.25rem;
   }
 
   h1 {
-    font-size: clamp(2.8rem, 5.2vw, 4.2rem);
+    font-size: clamp(2.65rem, 4.8vw, 4rem);
   }
 
   .floating-note--top {
@@ -1455,7 +1455,44 @@ html[data-theme="dark"] .theme-icon--moon {
   }
 }
 
-@media (min-width: 52.01rem) and (max-height: 48rem) {
+@media (min-width: 833px) and (max-height: 960px) {
+  .section {
+    padding-block: 3.5rem;
+  }
+
+  .section-heading {
+    margin-bottom: 2.5rem;
+  }
+
+  .principles-grid {
+    margin-top: 2.5rem;
+  }
+
+  .principle__number,
+  .card-icon {
+    margin-bottom: 1.5rem;
+  }
+
+  .impact-item {
+    padding-block: 1.5rem;
+  }
+
+  .experience-intro {
+    position: static;
+  }
+
+  .timeline-item {
+    padding-bottom: 2.25rem;
+  }
+
+  .stack-group__index {
+    margin-bottom: 2rem;
+  }
+
+  .education-grid {
+    margin-top: 3rem;
+  }
+
   .hero {
     min-height: auto;
     align-items: start;
@@ -1593,7 +1630,7 @@ html[data-theme="dark"] .theme-icon--moon {
 
   .hero {
     min-height: auto;
-    padding-top: calc(var(--header-height) + 5rem);
+    padding-top: calc(var(--header-height) + 3rem);
   }
 
   .hero__grid,
@@ -1677,7 +1714,7 @@ html[data-theme="dark"] .theme-icon--moon {
   }
 
   .stack-group {
-    min-height: 17rem;
+    min-height: auto;
   }
 
   .contact__shape {
@@ -1687,7 +1724,7 @@ html[data-theme="dark"] .theme-icon--moon {
 
 @media (max-width: 36rem) {
   .section {
-    padding-block: 5rem;
+    padding-block: clamp(3.5rem, 8svh, 5rem);
   }
 
   h1 {
